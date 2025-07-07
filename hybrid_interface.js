@@ -79,9 +79,9 @@ window.FKL_ToNativeInterface = {
         this._nativeHandler("fklGetModel", {callBack:sCallback});
     },
 
-    fklSetStartUlr: function (sCallback) {
+    fklSetStartUlr: function (startUrl) {
         if (!this._isRunningInApp()) { alert("앱에서만 실행 가능합니다."); return;}
-        this._nativeHandler("fklSetStartUlr", {callBack:sCallback});
+        this._nativeHandler("fklSetStartUlr", startUrl);
     },
     fklClearStartUlr: function () {
         if (!this._isRunningInApp()) { alert("앱에서만 실행 가능합니다."); return;}
