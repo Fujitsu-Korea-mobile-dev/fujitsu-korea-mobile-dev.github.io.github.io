@@ -85,7 +85,7 @@ window.FKL_ToNativeInterface = {
     },
     fklClearStartUlr: function () {
         if (!this._isRunningInApp()) { alert("앱에서만 실행 가능합니다."); return;}
-        this._nativeHandler("fklClearStartUlr", {callBack:sCallback});
+        this._nativeHandler("fklClearStartUlr");
     },
 
 }
